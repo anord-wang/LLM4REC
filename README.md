@@ -59,4 +59,17 @@ OR
 accelerate launch finetuning.py --dataset 'dataset_name' --lambda_V 1
 ```
 
-**Be careful!!!** You may need to change the path based on your own.
+**Be careful!!!** 
+You may need to change the path based on your own.
+
+And, you will need a folder to store the model. It should have a structure like this.
+
+```bash
+/'dataset_name'
+  /collaborate
+  /content
+  /rec
+```
+
+
+
