@@ -71,5 +71,5 @@ And, you will need a folder to store the model. It should have a structure like 
   /rec
 ```
 
-
+If you have any questions, please feel free to drop me an e-mail.
 
