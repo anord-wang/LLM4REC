@@ -27,7 +27,7 @@ There are data preprocessing, pre-training, fine-tuning, and prediction codes in
 ### 3.2.1. Data Pre-processing Codes
 First, the data preprocessing codes contain [data_preprocess_amazon.py](src/data_preprocess_amazon.py), [data_preprocessing.py](src/data_preprocessing.py), and [data_pkl.py](src/data_pkl.py).
 
-[data_preprocess_amazon.py](src/data_preprocess_amazon.py) is used to transform raw data to the format we want. The processed data can be found at this [link]().
+[data_preprocess_amazon.py](src/data_preprocess_amazon.py) is used to transform raw data to the format we want. The processed data can be found at this [link](https://drive.google.com/file/d/1LyT0A1NoFJljg8eVWvkoGNvyeOGwX_K9/view?usp=sharing).
 
 [data_preprocessing.py](src/data_preprocessing.py) is used to get the relationship matrix for every dataset.
 
