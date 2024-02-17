@@ -22,18 +22,41 @@ The modified Attention code is in the [folder](modified_transformer/). You can p
 Or you can just create a new lib containing these codes and name it 'newTransformers'.
 
 ## 3.2. Main Codes
-There are data preprocessing, pre-training, fine-tuning, and prediction codes in the [src](src/). 
+There are data preprocessing, pre-training, fine-tuning, and prediction codes in the [src/](src/). 
 
 ### 3.2.1. Data Pre-processing Codes
 First, the data preprocessing codes contain [data_preprocess_amazon.py](src/data_preprocess_amazon.py), [data_preprocessing.py](src/data_preprocessing.py), and [data_pkl.py](src/data_pkl.py).
 
-data_preprocess_amazon.py is used to transform raw data to the format we want. The processed data can be found at this [link]().
+[data_preprocess_amazon.py](src/data_preprocess_amazon.py) is used to transform raw data to the format we want. The processed data can be found at this [link]().
 
+[data_preprocessing.py](src/data_preprocessing.py) is used to get the relationship matrix for every dataset.
+
+[data_pkl.py](src/data_pkl.py) is used to get 2-order connection among items.
 
 ### 3.2.2. Useful Components
-These codes are in [libs](src/libs/). These codes are built for the dataloader, personalized models, and tokenizer.
+These codes are in [libs/](src/libs/). These codes are built for the dataloader, personalized models, and tokenizer.
 
 ### 3.2.3. Codes to Run
 These codes are used for pre-training and fine-tuning.
 
+[training.py](src/training.py) is used for pre-training stage. You can run like this:
 
+```bash
+python training.py --dataset 'dataset_name' --lambda_V 1
+
+Or
+
+accelerate launch training.py --dataset 'dataset_name' --lambda_V 1
+```
+
+[finetuning.py](src/finetuning.py) is used for fine-tuning stage. You can run like this:
+
+```bash
+python finetuning.py --dataset 'dataset_name' --lambda_V 1
+
+Or
+
+accelerate launch finetuning.py --dataset 'dataset_name' --lambda_V 1
+```
+
+Be careful!!! You maybe need to change the path based on your own.
