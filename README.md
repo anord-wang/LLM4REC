@@ -9,7 +9,7 @@ We use the Amazon Review Dataset for experiments. The raw data can be found [her
 
 There are two parts of the code. The first part is the modified Attention code. The second part is the progress of the proposed method.
 
-The modified Attention code is in the [folder](modified_transformer/). You can put it in the Transformers lib and the path to those two codes may be like this:(). Or you can just create a new lib containing these codes and name it 'newTransformers'.
+The modified Attention code is in the [folder](modified_transformer/). You can put it in the Transformers lib and the path to those two codes may be like this:'/home/local/ASURITE/xwang735/anaconda3/envs/LLM/lib/python3.12/site-packages/transformers/models/gpt2'. Or you can just create a new lib containing these codes and name it 'newTransformers'.
 
 There are data preprocessing, pre-training, fine-tuning, and prediction codes in the src folder. 
 First, the data preprocessing codes contain .py .py, and .py. The processed data can be found at this [link]().
