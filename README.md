@@ -43,9 +43,9 @@ These codes are used for pre-training and fine-tuning.
 
 ```bash
 python training.py --dataset 'dataset_name' --lambda_V 1
-
+```
 Or
-
+```bash
 accelerate launch training.py --dataset 'dataset_name' --lambda_V 1
 ```
 
@@ -53,10 +53,10 @@ accelerate launch training.py --dataset 'dataset_name' --lambda_V 1
 
 ```bash
 python finetuning.py --dataset 'dataset_name' --lambda_V 1
-
+```
 Or
-
+```bash
 accelerate launch finetuning.py --dataset 'dataset_name' --lambda_V 1
 ```
 
-Be careful!!! You maybe need to change the path based on your own.
+Be careful!!! You may need to change the path based on your own.
