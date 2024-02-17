@@ -2,11 +2,14 @@
 
 This ReadMe file contains the Python codes for the [paper](https://arxiv.org/abs/2402.09617).
 
+# 1. Task and Solution
 Our task is to use large language models to recommend.
 The current methods cannot integrate edge information in graphs into LLMs structurally. Our solution contains two major parts. First, we add an edge measurement in attention calculation. Second, we design a set of prompts for pre-training and fine-tuning. The details can be found in the [paper](https://arxiv.org/abs/2402.09617).
 
+# 2. Dataset
 We use the Amazon Review Dataset for experiments. The raw data can be found [here](https://nijianmo.github.io/amazon/index.html).
 
+# 3. Codes Description
 There are two parts of the code. The first part is the modified Attention code. The second part is the progress of the proposed method.
 
 The modified Attention code is in the [folder](modified_transformer/). You can put it in the Transformers lib and the path to those two codes may be like this:
