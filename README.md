@@ -12,7 +12,7 @@ We use the Amazon Review Dataset for experiments. The raw data can be found [her
 # 3. Codes Description
 There are two parts of the code. The first part is the modified Attention code. The second part is the progress of the proposed method.
 
-## 3.1. modified Attention codes
+## 3.1. Modified Attention Codes
 The modified Attention code is in the [folder](modified_transformer/). You can put it in the Transformers lib and the path to those two codes may be like this:
 
 ```bash
@@ -21,12 +21,19 @@ The modified Attention code is in the [folder](modified_transformer/). You can p
 
 Or you can just create a new lib containing these codes and name it 'newTransformers'.
 
-## 3.2. Data Pre-processing Codes
-There are data preprocessing, pre-training, fine-tuning, and prediction codes in the src folder. 
-First, the data preprocessing codes contain .py .py, and .py. The processed data can be found at this [link]().
-https://github.com/anord-wang/LLM4REC/tree/main/modified_transformer
+## 3.2. Main Codes
+There are data preprocessing, pre-training, fine-tuning, and prediction codes in the [src](src/). 
 
-## 3.3. Useful Components
+### 3.2.1. Data Pre-processing Codes
+First, the data preprocessing codes contain [data_preprocess_amazon.py](src/data_preprocess_amazon.py), [data_preprocessing.py](src/data_preprocessing.py), and [data_pkl.py](src/data_pkl.py).
 
-## 3.4. Main Codes
+data_preprocess_amazon.py is used to transform raw data to the format we want. The processed data can be found at this [link]().
+
+
+### 3.2.2. Useful Components
+These codes are in [libs](src/libs/). These codes are built for the dataloader, personalized models, and tokenizer.
+
+### 3.2.3. Codes to Run
+These codes are used for pre-training and fine-tuning.
+
 
